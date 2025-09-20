@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- Primary Meta Tags -->
+    <title>ELITEKAMRUL EDU ID Card Generator - Professional Student ID Cards Online</title>
+    <meta name="title" content="ELITEKAMRUL EDU ID Card Generator - Professional Student ID Cards Online">
+    <meta name="description" content="Create professional student ID cards instantly with ELITEKAMRUL EDU ID Card Generator. Free online tool for educational institutions. Download high-quality ID cards in JPG format.">
+    <meta name="keywords" content="ID card generator, student ID card, educational ID card, school ID card, college ID card, university ID card, professional ID card, online ID card maker, free ID card generator, Kamrul Hossain">
+    <meta name="author" content="Kamrul Hossain">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eduid.pages.dev/">
+    <meta property="og:title" content="ELITEKAMRUL EDU ID Card Generator - Professional Student ID Cards">
+    <meta property="og:description" content="Create professional student ID cards instantly. Free online tool for educational institutions. Download high-quality ID cards in JPG format.">
+    <meta property="og:image" content="https://eduid.pages.dev/assets/og-image.jpg">
+    <meta property="og:site_name" content="ELITEKAMRUL EDU">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://eduid.pages.dev/">
+    <meta property="twitter:title" content="ELITEKAMRUL EDU ID Card Generator - Professional Student ID Cards">
+    <meta property="twitter:description" content="Create professional student ID cards instantly. Free online tool for educational institutions. Download high-quality ID cards in JPG format.">
+    <meta property="twitter:image" content="https://eduid.pages.dev/assets/twitter-image.jpg">
+    <meta property="twitter:creator" content="@elitekamrul">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#4F46E5">
+    <meta name="msapplication-TileColor" content="#4F46E5">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="ELITEKAMRUL EDU">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://eduid.pages.dev/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "ELITEKAMRUL EDU ID Card Generator",
+        "description": "Professional student ID card generator for educational institutions",
+        "url": "https://eduid.pages.dev/",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "creator": {
+            "@type": "Person",
+            "name": "Kamrul Hossain",
+            "url": "https://eduid.pages.dev/"
+        },
+        "featureList": [
+            "Professional ID Card Design",
+            "High-Quality JPG Export",
+            "Multiple University Templates",
+            "Custom Student Information",
+            "Mobile Responsive Design",
+            "Free to Use"
+        ]
+    }
+    </script>
+    
+    <!-- External Resources -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="font-sans bg-gray-100 min-h-screen flex flex-col">
+    <div class="flex-1 flex items-center justify-center p-4">
+        <div class="flex flex-col lg:flex-row bg-white rounded-lg shadow-xl overflow-hidden w-full max-w-6xl mx-4">
+        <div class="w-full lg:w-1/2 p-6 lg:p-8 space-y-6 border-r border-gray-200">
+            <header>
+                <h1 class="text-3xl font-bold mb-6 text-center">
+                    <span class="text-indigo-600">ELITEKAMRUL</span>
+                    <span class="text-fuchsia-600">EDU</span>
+                    <span class="text-emerald-600">ID</span>
+                    <span class="text-amber-600">CARD</span>
+                    <span class="text-sky-600">GENERATOR</span>
+                </h1>
+                <p class="text-center text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">Create professional student ID cards instantly. Free online tool for educational institutions.</p>
+            </header>
+
+            <div class="space-y-3 sm:space-y-4">
+                <label for="collegeNameInput" class="block text-sm font-medium text-gray-700">College Name:</label>
+                <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
+                    <input type="text" id="collegeNameInput" value="Guru Gobind Singh Indraprastha University" class="flex-grow px-3 py-2 border border-gray-300 rounded-md shadow-sm text-sm sm:text-base">
+                    <button id="randomCollegeBtn" class="px-2 py-1 bg-blue-500 text-white text-xs rounded-md hover:bg-blue-600 hover:scale-105 hover:shadow-lg active:scale-95 active:bg-blue-700 transition-all duration-200"><i class="fa-solid fa-shuffle mr-1"></i>Pick College</button>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <label for="idInput" class="block text-sm font-medium text-gray-700">ID Number:</label>
+                <div class="flex space-x-2">
+                    <input type="text" id="idInput" value="21BC5229" class="flex-grow px-3 py-2 border border-gray-300 rounded-md shadow-sm">
+                    <button id="randomIdBtn" class="px-2 py-1 bg-purple-500 text-white text-xs rounded-md hover:bg-purple-600 hover:scale-105 hover:shadow-lg active:scale-95 active:bg-purple-700 transition-all duration-200"><i class="fa-solid fa-hashtag mr-1"></i>Generate</button>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <label for="studentEmailInput" class="block text-sm font-medium text-gray-700">Student Email:</label>
+                <div class="flex space-x-2">
+                    <input type="email" id="studentEmailInput" value="21bc5229@cuchd.in" class="flex-grow px-3 py-2 border border-gray-300 rounded-md shadow-sm" readonly>
+                    <button id="copyEmailBtn" class="px-2 py-1 bg-green-500 text-white text-xs rounded-md hover:bg-green-600 hover:scale-105 hover:shadow-lg active:scale-95 active:bg-green-700 transition-all duration-200"><i class="fa-solid fa-copy mr-1"></i>Copy</button>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <label for="mobileInput" class="block text-sm font-medium text-gray-700">Mobile:</label>
+                <div class="flex space-x-2">
+                    <input type="tel" id="mobileInput" value="+917685213548" class="flex-grow px-3 py-2 border border-gray-300 rounded-md shadow-sm">
+                    <button id="randomMobileBtn" class="px-2 py-1 bg-orange-500 text-white text-xs rounded-md hover:bg-orange-600 hover:scale-105 hover:shadow-lg active:scale-95 active:bg-orange-700 transition-all duration-200"><i class="fa-solid fa-mobile-screen-button mr-1"></i>New Number</button>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <label for="classInput" class="block text-sm font-medium text-gray-700">Class:</label>
+                <input type="text" id="classInput" value="CSC" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm">
+            </div>
+            <div class="space-y-4">
+                <label for="dobInput" class="block text-sm font-medium text-gray-700">Date Of Birth:</label>
+                <input type="date" id="dobInput" value="2000-01-15" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm">
+            </div>
+            <div class="space-y-4">
+                <label for="addressInput" class="block text-sm font-medium text-gray-700">Address:</label>
+                <div class="flex space-x-2">
+                    <input type="text" id="addressInput" value="At- Sadanandpur Dist- Supaul, Bihar" class="flex-grow px-3 py-2 border border-gray-300 rounded-md shadow-sm">
+                    <button id="randomAddressBtn" class="px-2 py-1 bg-teal-500 text-white text-xs rounded-md hover:bg-teal-600 hover:scale-105 hover:shadow-lg active:scale-95 active:bg-teal-700 transition-all duration-200"><i class="fa-solid fa-location-dot mr-1"></i>Pick Location</button>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <label for="issueDateInput" class="block text-sm font-medium text-gray-700">Issue On:</label>
+                <input type="text" id="issueDateInput" value="JULY 2025" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm">
+            </div>
+            <div class="space-y-4">
+                <label for="websiteInput" class="block text-sm font-medium text-gray-700">Website:</label>
+                <input type="text" id="websiteInput" value="Web.www.nic.in" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm">
+            </div>
+            <div class="space-y-4">
+                <label for="nameInput" class="block text-sm font-medium text-gray-700">Student Name:</label>
+                <div class="flex space-x-2">
+                    <input type="text" id="nameInput" value="Kamrul Hossain" class="flex-grow px-3 py-2 border border-gray-300 rounded-md shadow-sm">
+                    <button id="randomNameBtn" class="px-2 py-1 bg-pink-500 text-white text-xs rounded-md hover:bg-pink-600 hover:scale-105 hover:shadow-lg active:scale-95 active:bg-pink-700 transition-all duration-200"><i class="fa-solid fa-user mr-1"></i>Pick Name</button>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <label class="block text-sm font-medium text-gray-700">Student Photo</label>
+                <div class="flex space-x-2">
+                    <button id="randomPhotoBtn" class="px-2 py-1 bg-red-500 text-white text-xs rounded-md hover:bg-red-600 hover:scale-105 hover:shadow-lg active:scale-95 active:bg-red-700 transition-all duration-200"><i class="fa-solid fa-image mr-1"></i>New Photo</button>
+                    <label for="studentPhotoUpload" class="file-input-button">Choose File</label>
+                    <input type="file" id="studentPhotoUpload" accept="image/*" class="hidden">
+                </div>
+            </div>
+            <div class="space-y-4">
+                <label class="block text-sm font-medium text-gray-700">College Logo</label>
+                <div class="flex space-x-2">
+                    <button id="randomLogoBtn" class="px-2 py-1 bg-yellow-500 text-white text-xs rounded-md hover:bg-yellow-600 hover:scale-105 hover:shadow-lg active:scale-95 active:bg-yellow-700 transition-all duration-200"><i class="fa-solid fa-shield-halved mr-1"></i>New Logo</button>
+                    <label for="collegeLogoUpload" class="file-input-button">Choose File</label>
+                    <input type="file" id="collegeLogoUpload" accept="image/*" class="hidden">
+                </div>
+            </div>
+            <div class="space-y-4">
+                <label class="block text-sm font-medium text-gray-700">Principal Signature</label>
+                <div class="flex space-x-2">
+                    <button id="randomSignatureBtn" class="px-2 py-1 bg-cyan-500 text-white text-xs rounded-md hover:bg-cyan-600 hover:scale-105 hover:shadow-lg active:scale-95 active:bg-cyan-700 transition-all duration-200"><i class="fa-solid fa-pen-fancy mr-1"></i>New Signature</button>
+                    <label for="principalSignatureUpload" class="file-input-button">Choose File</label>
+                    <input type="file" id="principalSignatureUpload" accept="image/*" class="hidden">
+                </div>
+                <div class="flex space-x-2">
+                    <input type="text" id="principalNameInput" placeholder="Type principal signature text" class="flex-grow px-3 py-2 border border-gray-300 rounded-md shadow-sm">
+                    <button id="randomPrincipalNameBtn" class="px-2 py-1 bg-emerald-500 text-white text-xs rounded-md hover:bg-emerald-600 hover:scale-105 hover:shadow-lg active:scale-95 active:bg-emerald-700 transition-all duration-200"><i class="fa-solid fa-pen-nib mr-1"></i>Pick Name</button>
+                </div>
+            </div>
+        </div>
+
+        <main class="w-full lg:w-1/2 p-8 flex flex-col items-center justify-center bg-gray-50 relative">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Live ID Card Preview</h2>
+
+            <div id="idCardPreview" class="id-card-container">
+                <div class="top-header">
+                    <p>Issue On <span id="cardIssueDate">JULY 2025</span></p>
+                    <p><i class="fa-solid fa-globe mr-1"></i><span id="cardWebsiteText">ipu.ac.in</span></p>
+                </div>
+
+                <div class="main-content">
+                    <div class="photo-container">
+                        <img id="cardStudentPhoto" src="assets/photos/01.jpg" alt="Student Photo">
+                    </div>
+                    <div class="details-container">
+                        <div class="college-info">
+                            <img id="cardLogo" src="https://i.ibb.co.com/GvTwszKZ/photo-2025-08-24-12-43-09.jpg" alt="College Logo">
+                            <p id="cardCollegeName">Punjab University, Chandigarh</p>
+                        </div>
+                        <p><span class="label">ID</span>: <span id="cardID">21BC5229</span></p>
+                        <p><span class="label">Mobile</span>: <span id="cardMobile">7685213548</span></p>
+                        <p><span class="label">Class</span>: <span id="cardClass">CSC</span></p>
+                        <p><span class="label">D.O.B</span>: <span id="cardDOB">12-12-2003</span></p>
+                        <p><span class="label">Address</span>: <span id="cardAddress">At- Sadanandpur Dist- Supaul, Bihar</span></p>
+                    </div>
+                </div>
+
+                <div class="bottom-section">
+                    <p class="student-name" id="cardName">Fuldev kumar</p>
+                    <div class="principal-info">
+                        <div class="principal-signature">
+                            <img id="cardPrincipalSignature" src="https://i.ibb.co.com/M6Lg5tN/dummy-sign.png" alt="Principal Signature">
+                            <span id="cardPrincipalName" class="signature-text">Principal Name</span>
+                            <div class="signature-underline">
+                                <span id="cardPrincipalCaption" class="signature-caption">Authorized by Registrar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="downloadCardButton" class="mt-10 px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-lg shadow-xl hover:from-indigo-700 hover:to-purple-700 hover:scale-105 hover:shadow-2xl active:scale-95 active:shadow-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all duration-300 text-base w-auto">
+                <i class="fa-solid fa-download mr-2"></i>Download Card
+            </button>
+        </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Brand Section -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-bold mb-4 hover:scale-105 transition-transform duration-300">
+                        <span class="text-indigo-400 hover:text-indigo-300 transition-colors duration-300">ELITEKAMRUL</span>
+                        <span class="text-fuchsia-400 hover:text-fuchsia-300 transition-colors duration-300">EDU</span>
+                    </h3>
+                    <p class="text-gray-300 mb-4 hover:text-white transition-colors duration-300 text-base">Professional ID Card Generator for Educational Institutions. Create student ID cards, college ID cards, and university ID cards instantly.</p>
+                    <p class="text-sm text-gray-400 hover:text-gray-300 transition-colors duration-300">© <span id="currentYear"></span> All rights reserved</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold mb-4 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-300 inline-block">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-300 inline-block">About</a></li>
+                        <li><a href="features.html" class="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-300 inline-block">Features</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-300 inline-block">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Author Section -->
+                <div class="text-center md:text-left">
+                    <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
+                        <!-- Author Photo -->
+                        <div class="relative">
+                            <div class="w-20 h-20 rounded-full overflow-hidden border-3 border-yellow-400 shadow-lg">
+                                <img src="assets/photos/01.jpg" alt="Kamrul Hossain - Author" class="w-full h-full object-cover">
+                            </div>
+                            <!-- Online Status -->
+                            <div class="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 border-2 border-gray-800 rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-check text-white text-xs"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Author Info -->
+                        <div class="text-center md:text-left">
+                            <h4 class="text-lg font-bold text-blue-400 hover:text-blue-300 transition-colors duration-300 mb-2" style="font-family: 'Dancing Script', cursive; letter-spacing: 1px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                                <i class="fa-solid fa-user-shield mr-2"></i>
+                                Author: Kamrul
+                            </h4>
+                            <p class="text-gray-300 text-sm mb-2">Full-Stack Developer & Ethical Hacker</p>
+                            <div class="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                                <a href="https://procloudify.com/bd/recommended/kamrul/?via=kamrul" target="_blank" 
+                                   class="group flex flex-col sm:flex-row items-center sm:items-start space-y-1 sm:space-y-0 sm:space-x-2 hover:scale-105 sm:hover:scale-110 hover:rotate-1 transition-all duration-300 mb-2">
+                                    <span class="text-gray-400 text-xs sm:text-sm group-hover:text-white transition-colors duration-300">Sponsored by</span>
+                                    <img src="https://procloudify.com.bd/assets/images/procloudify-Logo.avif" 
+                                         alt="ProCloudify" 
+                                         class="h-5 w-auto sm:h-6 md:h-7 opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300 filter brightness-0 invert">
+                                </a>
+                                <div class="text-center sm:text-left space-y-1">
+                                    <p class="text-gray-500 text-xs sm:text-sm italic group-hover:text-gray-400 transition-colors duration-300">Fast. Secure. Perfect Hosting.</p>
+                                    <p class="text-gray-600 text-xs sm:text-sm font-medium group-hover:text-yellow-400 transition-colors duration-300">Premium Cloud Solutions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center">
+                <p class="text-gray-400 text-sm hover:text-gray-300 transition-colors duration-300">
+                    Made with <i class="fas fa-heart text-red-500 hover:text-red-400 hover:scale-110 transition-all duration-300"></i> by 
+                    <span class="text-yellow-400 font-semibold hover:text-yellow-300 transition-colors duration-300">Kamrul Hossain</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
+
+
