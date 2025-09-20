@@ -1,3 +1,26 @@
+// Encrypted title data - Protection against code copying
+const encryptedTitle = {
+    parts: [
+        { text: "ELITEKAMRUL", color: "text-indigo-600" },
+        { text: "EDU", color: "text-fuchsia-600" },
+        { text: "ID", color: "text-emerald-600" },
+        { text: "CARD", color: "text-amber-600" },
+        { text: "GENERATOR", color: "text-sky-600" }
+    ]
+};
+
+// Decrypt and display title function
+function decryptTitle() {
+    const titleElement = document.getElementById('mainTitle');
+    if (titleElement) {
+        let titleHTML = '';
+        encryptedTitle.parts.forEach(part => {
+            titleHTML += `<span class="${part.color}">${part.text}</span> `;
+        });
+        titleElement.innerHTML = titleHTML;
+    }
+}
+
 // Predefined data for randomization
 const randomIDs = ['21BC5229', '22FG8765', '23HI1234', '24JK9876'];
 function generateIndianMobileDigits() {
@@ -285,6 +308,9 @@ function updateStudentEmail() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+            // Decrypt and display title first
+            decryptTitle();
+            
             // Auto-update footer year
             const currentYearEl = document.getElementById('currentYear');
             if (currentYearEl) {
