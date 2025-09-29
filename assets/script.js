@@ -13,10 +13,11 @@ const encryptedTitle = {
 function decryptTitle() {
     const titleElement = document.getElementById('mainTitle');
     if (titleElement) {
-        let titleHTML = '';
+        let titleHTML = '<i class="fa-solid fa-graduation-cap mr-2 text-indigo-600"></i>';
         encryptedTitle.parts.forEach(part => {
             titleHTML += `<span class="${part.color}">${part.text}</span> `;
         });
+        titleHTML += '<i class="fa-solid fa-id-card-clip ml-2 text-emerald-600"></i>';
         titleElement.innerHTML = titleHTML;
     }
 }
