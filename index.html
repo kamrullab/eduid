@@ -53,6 +53,7 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://procloudify.com.bd" crossorigin>
     
     <!-- DNS Prefetch -->
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
@@ -93,7 +94,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
     <style>
@@ -218,7 +220,7 @@
                     </div>
                     <div class="details-container">
                         <div class="college-info">
-                            <img id="cardLogo" src="https://i.ibb.co.com/GvTwszKZ/photo-2025-08-24-12-43-09.jpg" alt="College Logo">
+                            <img id="cardLogo" src="assets/logo/ipu-logo.png" alt="College Logo">
                             <p id="cardCollegeName">Punjab University, Chandigarh</p>
                         </div>
                         <p><span class="label">ID</span>: <span id="cardID">21BC5229</span></p>
@@ -291,7 +293,7 @@
                         <!-- Author Photo -->
                         <div class="relative">
                             <div class="w-20 h-20 rounded-full overflow-hidden border-3 border-yellow-400 shadow-lg">
-                                <img src="assets/photos/01.jpg" alt="Kamrul Hossain - Author" class="w-full h-full object-cover">
+                                <img src="assets/photos/01.jpg" alt="Kamrul Hossain - Author" class="w-full h-full object-cover" loading="lazy" decoding="async" fetchpriority="low">
                             </div>
                             <!-- Online Status -->
                             <div class="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 border-2 border-gray-800 rounded-full flex items-center justify-center">
@@ -310,7 +312,7 @@
                                 <a href="https://procloudify.com/bd/recommended/kamrul/?via=kamrul" target="_blank"
                                    class="inline-flex items-center space-x-2 mb-2">
                                     <span class="text-gray-400 text-xs sm:text-sm">Sponsored by</span>
-                                    <img src="https://procloudify.com.bd/assets/images/procloudify-Logo.avif"
+                                    <img src="https://procloudify.com.bd/assets/images/procloudify-Logo.avif" loading="lazy" decoding="async" fetchpriority="low"
                                          alt="ProCloudify"
                                          class="h-5 w-auto sm:h-6 md:h-7 opacity-90 filter brightness-0 invert transition-all duration-300 hover:opacity-100 hover:scale-110 sponsor-logo">
                                 </a>
