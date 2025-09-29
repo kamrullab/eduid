@@ -11,6 +11,10 @@ A professional, feature-rich ID card generator for educational institutions with
 
 **🚀 Try it now**: [https://eduid.pages.dev/](https://eduid.pages.dev/)
 
+Related tools:
+- ELITE GEN: [https://elitegen.pages.dev/](https://elitegen.pages.dev/)
+- IP CHECK: [https://ip8.com](https://ip8.com)
+
 Experience the full functionality of the ID Card Generator with all features available online!
 
 ## ✨ Features
@@ -119,6 +123,7 @@ eduid/
 - **Download**: High-quality JPEG export
 - **Print**: Direct printing with optimized layout
 - **Custom Filename**: Automatic naming (FirstName_ID.jpg)
+
 
 ## 🏫 Supported Universities
 

@@ -47,6 +47,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%231F2937'/%3E%3Cpath d='M12 4L2 9l10 5 10-5-10-5z' fill='%23F59E0B'/%3E%3Cpath d='M6 11v3c0 2 6 3 6 3s6-1 6-3v-3' fill='%2310B981'/%3E%3Cpath d='M22 9v5' stroke='%23F59E0B' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
     
     <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
@@ -95,6 +96,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
+    <style>
+    /* Sponsor logo hover to red */
+    .sponsor-logo{ transition: filter 0.3s ease, transform 0.2s ease, opacity 0.3s ease; }
+    .sponsor-logo:hover{ filter: invert(21%) sepia(94%) saturate(7486%) hue-rotate(1deg) brightness(103%) contrast(106%); }
+    .sponsor-logo:active{ transform: scale(1.12); }
+    </style>
 </head>
 <body class="font-sans bg-gray-100 min-h-screen flex flex-col">
     <div class="flex-1 flex items-center justify-center p-4">
@@ -246,30 +253,40 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8 mt-12">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="h-1 w-full bg-gradient-to-r from-indigo-500 via-fuchsia-500 to-emerald-500 rounded-full mb-8"></div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Brand Section -->
-                <div class="text-center md:text-left">
+                <div class="text-center md:text-left bg-gray-900/40 rounded-xl p-6 ring-1 ring-white/5 hover:ring-indigo-500/30 transition">
                     <h3 class="text-2xl font-bold mb-4 hover:scale-105 transition-transform duration-300">
                         <span class="text-indigo-400 hover:text-indigo-300 transition-colors duration-300">ELITEKAMRUL</span>
                         <span class="text-fuchsia-400 hover:text-fuchsia-300 transition-colors duration-300">EDU</span>
                     </h3>
                     <p class="text-gray-300 mb-4 hover:text-white transition-colors duration-300 text-base">Professional ID Card Generator for Educational Institutions. Create student ID cards, college ID cards, and university ID cards instantly.</p>
-                    <p class="text-sm text-gray-400 hover:text-gray-300 transition-colors duration-300">© <span id="currentYear"></span> All rights reserved</p>
+                    
                 </div>
 
                 <!-- Quick Links -->
-                <div class="text-center md:text-left">
-                    <h4 class="text-lg font-semibold mb-4 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-300 inline-block">Home</a></li>
-                        <li><a href="about.html" class="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-300 inline-block">About</a></li>
-                        <li><a href="features.html" class="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-300 inline-block">Features</a></li>
-                        <li><a href="contact.html" class="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-300 inline-block">Contact</a></li>
-                    </ul>
+                <div class="text-center md:text-left bg-gray-900/40 rounded-xl p-6 ring-1 ring-white/5 hover:ring-indigo-500/30 transition">
+                    <h4 class="text-lg font-semibold mb-4 text-yellow-400 hover:text-yellow-300 transition-colors duration-300"><i class="fa-solid fa-link mr-2"></i>QUICK</h4>
+                    <div class="grid grid-cols-2 gap-6">
+                        <ul class="space-y-2">
+                            <li><a href="index.html" class="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-300 inline-block"><i class="fa-solid fa-angle-right mr-2 text-yellow-400"></i>Home</a></li>
+                            <li><a href="about.html" class="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-300 inline-block"><i class="fa-solid fa-angle-right mr-2 text-yellow-400"></i>About</a></li>
+                            <li><a href="features.html" class="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-300 inline-block"><i class="fa-solid fa-angle-right mr-2 text-yellow-400"></i>Features</a></li>
+                            <li><a href="contact.html" class="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-300 inline-block"><i class="fa-solid fa-angle-right mr-2 text-yellow-400"></i>Contact</a></li>
+                        </ul>
+                        <div>
+                            <h5 class="text-lg font-semibold mb-4 text-green-400 hover:text-green-300 transition-colors duration-300"><i class="fa-solid fa-hashtag mr-2"></i>IMPORTENT</h5>
+                            <ul class="space-y-2">
+                                <li><a href="https://ip8.com" target="_blank" rel="noopener" class="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-300 inline-block"><i class="fa-solid fa-angle-right mr-2 text-green-400"></i>IP CHECK</a></li>
+                                <li><a href="https://elitegen.pages.dev/" target="_blank" rel="noopener" class="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-300 inline-block"><i class="fa-solid fa-angle-right mr-2 text-green-400"></i>ELITE GEN</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Author Section -->
-                <div class="text-center md:text-left">
+                <div class="text-center md:text-left bg-gray-900/40 rounded-xl p-6 ring-1 ring-white/5 hover:ring-indigo-500/30 transition">
                     <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
                         <!-- Author Photo -->
                         <div class="relative">
@@ -290,12 +307,12 @@
                             </h4>
                             <p class="text-gray-300 text-sm mb-2">Full-Stack Developer & Ethical Hacker</p>
                             <div class="text-gray-400 text-xs sm:text-sm leading-relaxed">
-                                <a href="https://procloudify.com/bd/recommended/kamrul/?via=kamrul" target="_blank" 
-                                   class="group flex flex-col sm:flex-row items-center sm:items-start space-y-1 sm:space-y-0 sm:space-x-2 hover:scale-105 sm:hover:scale-110 hover:rotate-1 transition-all duration-300 mb-2">
-                                    <span class="text-gray-400 text-xs sm:text-sm group-hover:text-white transition-colors duration-300">Sponsored by</span>
-                                    <img src="https://procloudify.com.bd/assets/images/procloudify-Logo.avif" 
-                                         alt="ProCloudify" 
-                                         class="h-5 w-auto sm:h-6 md:h-7 opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300 filter brightness-0 invert">
+                                <a href="https://procloudify.com/bd/recommended/kamrul/?via=kamrul" target="_blank"
+                                   class="inline-flex items-center space-x-2 mb-2">
+                                    <span class="text-gray-400 text-xs sm:text-sm">Sponsored by</span>
+                                    <img src="https://procloudify.com.bd/assets/images/procloudify-Logo.avif"
+                                         alt="ProCloudify"
+                                         class="h-5 w-auto sm:h-6 md:h-7 opacity-90 filter brightness-0 invert transition-all duration-300 hover:opacity-100 hover:scale-110 sponsor-logo">
                                 </a>
                                 <div class="text-center sm:text-left space-y-1">
                                     <p class="text-gray-500 text-xs sm:text-sm italic group-hover:text-gray-400 transition-colors duration-300">Fast. Secure. Perfect Hosting.</p>
@@ -308,10 +325,18 @@
 
             </div>
 
+            <!-- Social Row -->
+            <div class="mt-8 flex items-center justify-center gap-4 text-gray-400">
+                <a href="https://github.com/kamrullab" target="_blank" class="hover:text-white transition-colors" aria-label="GitHub"><i class="fab fa-github text-xl"></i></a>
+                <a href="https://facebook.com/elitekamruls" target="_blank" class="hover:text-white transition-colors" aria-label="Facebook"><i class="fab fa-facebook text-xl"></i></a>
+                <a href="https://twitter.com/elitekamrul" target="_blank" class="hover:text-white transition-colors" aria-label="Twitter"><i class="fab fa-twitter text-xl"></i></a>
+                <a href="https://youtube.com/@elitekamrul" target="_blank" class="hover:text-white transition-colors" aria-label="YouTube"><i class="fab fa-youtube text-xl"></i></a>
+            </div>
+
             <!-- Bottom Bar -->
             <div class="border-t border-gray-700 mt-8 pt-6 text-center">
                 <p class="text-gray-400 text-sm hover:text-gray-300 transition-colors duration-300">
-                    Made with <i class="fas fa-heart text-red-500 hover:text-red-400 hover:scale-110 transition-all duration-300"></i> by 
+                    © <span id="currentYear"></span> All rights reserved · Made with <i class="fas fa-heart text-red-500 hover:text-red-400 hover:scale-110 transition-all duration-300"></i> by 
                     <span class="text-yellow-400 font-semibold hover:text-yellow-300 transition-colors duration-300">Kamrul Hossain</span>
                 </p>
             </div>

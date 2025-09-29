@@ -35,6 +35,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%231F2937'/%3E%3Cpath d='M12 4L2 9l10 5 10-5-10-5z' fill='%23F59E0B'/%3E%3Cpath d='M6 11v3c0 2 6 3 6 3s6-1 6-3v-3' fill='%2310B981'/%3E%3Cpath d='M22 9v5' stroke='%23F59E0B' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
     
     <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,6 +46,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assets/style.css">
+    <style>
+    .sponsor-logo{ transition: filter 0.3s ease, transform 0.2s ease, opacity 0.3s ease; }
+    .sponsor-logo:hover{ filter: invert(21%) sepia(94%) saturate(7486%) hue-rotate(1deg) brightness(103%) contrast(106%); }
+    .sponsor-logo:active{ transform: scale(1.12); }
+    </style>
 </head>
 <body class="font-sans bg-gray-100 min-h-screen flex flex-col">
     <!-- Navigation -->
@@ -314,7 +320,7 @@
                         <span class="text-fuchsia-400 hover:text-fuchsia-300 transition-colors duration-300">EDU</span>
                     </h3>
                     <p class="text-gray-300 mb-4 hover:text-white transition-colors duration-300 text-base">Professional ID Card Generator for Educational Institutions. Create student ID cards, college ID cards, and university ID cards instantly.</p>
-                    <p class="text-sm text-gray-400 hover:text-gray-300 transition-colors duration-300">© <span id="currentYear"></span> All rights reserved</p>
+                    
                 </div>
 
                 <!-- Quick Links -->
@@ -351,11 +357,11 @@
                             <p class="text-gray-300 text-sm mb-2">Full-Stack Developer & Ethical Hacker</p>
                             <div class="text-gray-400 text-xs sm:text-sm leading-relaxed">
                                 <a href="https://procloudify.com/bd/recommended/kamrul/?via=kamrul" target="_blank" 
-                                   class="group flex flex-col sm:flex-row items-center sm:items-start space-y-1 sm:space-y-0 sm:space-x-2 hover:scale-105 sm:hover:scale-110 hover:rotate-1 transition-all duration-300 mb-2">
-                                    <span class="text-gray-400 text-xs sm:text-sm group-hover:text-white transition-colors duration-300">Sponsored by</span>
+                                   class="inline-flex items-center space-x-2 mb-2">
+                                    <span class="text-gray-400 text-xs sm:text-sm">Sponsored by</span>
                                     <img src="https://procloudify.com.bd/assets/images/procloudify-Logo.avif" 
                                          alt="ProCloudify" 
-                                         class="h-5 w-auto sm:h-6 md:h-7 opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300 filter brightness-0 invert">
+                                         class="h-5 w-auto sm:h-6 md:h-7 opacity-90 hover:opacity-100 hover:scale-110 filter brightness-0 invert transition-all duration-300 sponsor-logo">
                                 </a>
                                 <div class="text-center sm:text-left space-y-1">
                                     <p class="text-gray-500 text-xs sm:text-sm italic group-hover:text-gray-400 transition-colors duration-300">Fast. Secure. Perfect Hosting.</p>
@@ -371,7 +377,7 @@
             <!-- Bottom Bar -->
             <div class="border-t border-gray-700 mt-8 pt-6 text-center">
                 <p class="text-gray-400 text-sm hover:text-gray-300 transition-colors duration-300">
-                    Made with <i class="fas fa-heart text-red-500 hover:text-red-400 hover:scale-110 transition-all duration-300"></i> by 
+                    © <span id="currentYear"></span> All rights reserved · Made with <i class="fas fa-heart text-red-500 hover:text-red-400 hover:scale-110 transition-all duration-300"></i> by 
                     <span class="text-yellow-400 font-semibold hover:text-yellow-300 transition-colors duration-300">Kamrul Hossain</span>
                 </p>
             </div>
